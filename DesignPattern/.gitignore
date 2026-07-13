@@ -1,0 +1,12 @@
+# Bỏ qua thư mục cấu hình của IntelliJ
+.idea/
+*.iml
+
+# Bỏ qua thư mục chứa code đã biên dịch
+out/
+target/
+build/
+
+# Bỏ qua các file hệ thống khác nếu có
+.DS_Store
+Thumbs.db
