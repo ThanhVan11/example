@@ -1,6 +1,4 @@
 public class PaymentFactory {
-    private static String type;
-
     public static PaymentInterface createPayment(String type) {
         if (type == null || type.trim().isEmpty()) {
             throw new IllegalArgumentException("Payment type cannot be null or empty.");
