@@ -1,35 +1,30 @@
-public class CustomBurgerBuilder implements IBurgerBuilder {
+public class BurgerBuilder {
     private String buns;
     private String meat;
     private String sauce;
     private boolean hasCheese;
 
-    @Override
-    public IBurgerBuilder orderBuns(String buns) {
+    public BurgerBuilder buns(String buns) {
         this.buns = buns;
         return this;
     }
 
-    @Override
-    public IBurgerBuilder orderMeat(String meat) {
+    public BurgerBuilder meat(String meat) {
         this.meat = meat;
         return this;
     }
 
-    @Override
-    public IBurgerBuilder orderSauce(String sauce) {
+    public BurgerBuilder sauce(String sauce) {
         this.sauce = sauce;
         return this;
     }
 
-    @Override
-    public IBurgerBuilder addCheese(boolean hasCheese) {
+    public BurgerBuilder addCheese(boolean hasCheese) {
         this.hasCheese = hasCheese;
         return this;
     }
 
-    @Override
-    public Burger createBurger() {
+    public Burger build() {
         return new Burger(buns, meat, sauce, hasCheese);
     }
 }
